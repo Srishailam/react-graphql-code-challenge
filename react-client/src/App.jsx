@@ -1,11 +1,28 @@
 import React from 'react';
+import { gql } from 'apollo-boost';
+import { graphql } from 'react-apollo'
+import UserList from './components/UserList/UserList';
 
-function App() {
+
+const getUsersQuery = gql`
+query users {
+  users {
+    id
+    name
+    email
+    phone
+  }
+}
+`
+function App({data,loading, error}) {
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error :(</div>;
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+      <div className="App">
+        <UserList users={data.users}/>
+      </div>
   )
 };
 
-export default App;
+export default graphql(getUsersQuery)(App);
+

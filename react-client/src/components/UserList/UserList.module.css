@@ -1,0 +1,9 @@
+.UserList {
+  width: 350px;
+  margin: 10px auto 40px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border:  1px solid burlywood;
+}

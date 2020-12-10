@@ -8,12 +8,14 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "apollo-boost": "^0.4.7",
+    "apollo-boost": "0.1.1",
     "eslint": "^4.18.2",
-    "graphql": "^15.0.0",
+    "graphql": "0.13.0",
     "prop-types": "^15.6.0",
     "react": "^16.1.1",
+    "react-apollo": "2.0.4",
     "react-dom": "^16.1.1",
+    "react-icons": "^4.1.0",
     "react-scripts": "1.0.17",
     "webpack-dev-server": "^3.1.11"
   },
